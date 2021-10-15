@@ -1,0 +1,47 @@
+.head 
+{
+    background-color:aquamarine;
+    text-align: center;
+}
+.menu 
+{
+    width: 20%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.posts
+{
+    box-sizing: border-box;
+    border-left: 2px solid aquamarine;
+    padding: 10px;
+    text-align: left;
+}
+.last-posts
+{
+    box-sizing: border-box;
+    border: 2px dashed rgb(71, 194, 153);
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+
+.menu, .posts, .last-posts
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer
+{
+    text-align: center;
+}
+
+a:hover
+{
+    color: rgb(31, 182, 174);
+}
+a:visited 
+{
+    background-color: purple;
+}
