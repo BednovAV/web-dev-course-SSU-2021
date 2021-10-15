@@ -12,6 +12,7 @@
 }
 .posts
 {
+    width: 50%;
     box-sizing: border-box;
     border-left: 2px solid aquamarine;
     padding: 10px;
@@ -43,5 +44,5 @@ a:hover
 }
 a:visited 
 {
-    background-color: purple;
+    color: purple;
 }
