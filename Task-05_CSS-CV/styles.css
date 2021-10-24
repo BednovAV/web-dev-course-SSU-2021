@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: Arial;
+}
+
+header{
+    width: 100%;
+    border-bottom: rgb(197, 139, 30) solid 2px;
+}
+img{
+    box-sizing: border-box;
+    border-radius: 100px;
+    box-shadow: 0 0 7px #666;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.name{
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 20px;
+}
+
+ul{
+    box-sizing: border-box;
+    list-style-type: none;
+    float: right;
+    width: 20%;
+}
+
+h1{
+    margin-bottom: 2px;
+}
+
+h3,h6{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+img, .name, ul{
+    display: inline-block;
+    vertical-align: top;
+}
+
+b{
+    color: rgb(197, 139, 30);
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+.maintable tr{
+    border-bottom: rgba(119, 118, 118, 0.603) solid 2px;
+}
+
+td{
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.softskills{
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.softskills td{
+    vertical-align: top;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+
+.softskills tr{
+    border-bottom: 0;
+}
+
+.historyblock{
+    margin-bottom: 10px;
+}
+i{
+    font-size: 13px;
+}
