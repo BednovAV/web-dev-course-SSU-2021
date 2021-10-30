@@ -1,0 +1,8 @@
+body{
+    font-family: Arial;
+}
+div{
+    border-bottom: 2px solid orange;
+    margin: 10px;
+    padding: 10px;
+}

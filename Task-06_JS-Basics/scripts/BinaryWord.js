@@ -1,6 +1,6 @@
 function PageToBinary(){
     let input = document.getElementById("bin_input").value;
-    document.getElementById("bin_output").value = JSON.stringify(ToBinary(input));
+    document.getElementById("bin_output").value = 'Output: ' + JSON.stringify(ToBinary(input));
 }
 
 function ToBinary(text){

@@ -1,6 +1,6 @@
 function PageIsogram(){
     let input = document.getElementById("isogram_input").value;
-    document.getElementById("isogram_output").value = JSON.stringify(IsIsogram(input));
+    document.getElementById("isogram_output").value = 'Output: ' + JSON.stringify(IsIsogram(input));
 }
 
 function IsIsogram(text){

@@ -1,6 +1,6 @@
 function PageFormat(){
     let input = document.getElementById("format_input").value;
-    document.getElementById("format_output").value = JSON.stringify(Format(input));
+    document.getElementById("format_output").value = 'Output: ' + JSON.stringify(Format(input));
 }
 
 function Format(text) {
