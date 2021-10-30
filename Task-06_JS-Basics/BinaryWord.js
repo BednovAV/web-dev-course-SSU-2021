@@ -1,3 +1,8 @@
+function PageToBinary(){
+    let input = document.getElementById("bin_input").value;
+    document.getElementById("bin_output").value = JSON.stringify(ToBinary(input));
+}
+
 function ToBinary(text){
     let res = [];
     text.split('').forEach(ch =>{

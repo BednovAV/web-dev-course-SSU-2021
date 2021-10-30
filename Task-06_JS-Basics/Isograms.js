@@ -1,3 +1,8 @@
+function PageIsogram(){
+    let input = document.getElementById("isogram_input").value;
+    document.getElementById("isogram_output").value = JSON.stringify(IsIsogram(input));
+}
+
 function IsIsogram(text){
     let charsSet = new Set(text.toLowerCase());
     return text.length == charsSet.size;

@@ -1,3 +1,8 @@
+function PageFormat(){
+    let input = document.getElementById("format_input").value;
+    document.getElementById("format_output").value = JSON.stringify(Format(input));
+}
+
 function Format(text) {
     return text.split("")
                .map((ch, i) => ch.toUpperCase() + ch.repeat(i))

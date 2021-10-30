@@ -1,3 +1,8 @@
+function PageVowelsCount(){
+    let input = document.getElementById("vowels_input").value;
+    document.getElementById("vowels_output").value = JSON.stringify(VowelsCount(input));
+}
+
 function VowelsCount(text){
     let matches = text.match(/[aeiou]/gi) || [];
     return matches.length;

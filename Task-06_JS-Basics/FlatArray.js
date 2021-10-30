@@ -1,3 +1,9 @@
+function PageFlat(){
+    let input = document.getElementById("flat_input").value;
+    let array = Flat(JSON.parse(input));
+    document.getElementById("flat_output").value = JSON.stringify(array);
+}
+
 function Flat(array){
     let res = [];
     for (let i = 0; i < array.length; i++){
