@@ -1,7 +1,7 @@
 function Format(text) {
     return text.split("")
-                .map((ch, i) => ch.toUpperCase() + ch.repeat(i))
-                .join("-");
+               .map((ch, i) => ch.toUpperCase() + ch.repeat(i))
+               .join("-");
 }
 
 console.log('Task 4 - String formatting');
