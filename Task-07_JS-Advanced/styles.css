@@ -1,0 +1,32 @@
+body{
+    font-family: Arial;
+}
+div{
+    border-bottom: 2px solid orange;
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    margin-bottom: 5px;
+}
+p{
+    margin-top: 5px;
+}
+
+table {
+	width: auto;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-collapse: collapse; 
+}
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background-color: #ffeac4;
+	border: 1px solid #dda630;
+}
+table td {
+	border: 1px solid #dda630;
+	padding: 5px;
+}

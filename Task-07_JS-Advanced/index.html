@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-07 JS-Advanced</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div>
+        <h1>Task 1 - Phone number formatting</h1>
+        <p>Enter phone number digits separated by a white space</p>
+        Input: <input type="text" id="phone_input" onchange="pageToPhoneFormat()" class="input">
+        <output type="text" id="phone_output" class="output">
+    </div>
+
+    <div>
+        <h1>Task 2 - String to table formatting</h1>
+        <p>Enter rows count, columns count and text separated by a white space</p>
+        Input: <input type="text" id="string-table_input" onchange="pageFormatStringToTable()" class="input">
+        <output type="text" id="string-table_error_output" class="output"></output>
+        <section id="string-table_output" class="output"></section>
+    </div>
+
+    <div>
+        <h1>Task 3 - Binomial theorem</h1>
+        <p>Enter the power number</p>
+        Input: <input type="text" id="binom_input" onchange="pageBinom()" class="input">
+        <output type="text" id="binom_output" class="output">
+    </div>
+
+    <script src="scripts/PhoneFormat.js"></script>
+    <script src="scripts/StringToTableFormat.js"></script>
+    <script src="scripts/Formula.js"></script>
+</body>
+
+</html>
