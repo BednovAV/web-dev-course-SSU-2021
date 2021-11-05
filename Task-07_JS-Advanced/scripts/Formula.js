@@ -1,6 +1,41 @@
 function pageBinom(){
     let input = document.getElementById("binom_input").value;
-    document.getElementById("binom_output").value = 'Output: ' + binom(BigInt(input));
+    document.getElementById("binom_output").innerHTML = getHTMLFormula(BigInt(input));
+}
+
+function getHTMLFormula(n){
+
+    let binomStr = binom(n);
+    if(binomStr.includes('/')) return binomStr;// \_(0_0)_/
+
+    let form = binomStr.split('+');
+
+    let result = [];
+
+    form.forEach(item => {
+        let sub = '<msub>';
+
+        for(let i = 0; i < item.length; i++){
+            if(item[i] == '^') continue;
+            if(item[i] == 'a' || item[i] == 'b') {
+                sub+= `<mi>${item[i]}</mi>`;
+                continue;
+            }
+            if(isDigit(item[i])){
+                if(i != 0 && item[i - 1] == '^') {
+                    sub+= `<sup>${item[i]}</sup>`;
+                }
+                else {
+                    sub+= `<mi>${item[i]}</mi>`;
+                }
+            }
+        }
+
+        sub+= '</msub>';
+        result.push(sub);
+    });
+
+    return '<section id="math">' + result.join('<mo>+</mo>') + '</section>';
 }
 
 function binom(n){
@@ -52,6 +87,10 @@ function C(n, j){
 
 function factorial(n) {
     return (n > 1n) ? n * factorial(n - 1n) : 1n;
+}
+
+function isDigit(c){
+    return c >= '0' && c <= '9';
 }
 
 console.log('Task 3 - Binomial theorem');

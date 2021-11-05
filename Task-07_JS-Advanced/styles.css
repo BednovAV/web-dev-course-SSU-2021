@@ -30,3 +30,9 @@ table td {
 	border: 1px solid #dda630;
 	padding: 5px;
 }
+#math{
+	width: fit-content;
+	padding: 10px;
+	margin: 10px;
+	border: solid 1px #dda630;
+}
