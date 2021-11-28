@@ -1,13 +1,29 @@
 body{
     font-family: Arial;
+	background-color: rgb(79, 79, 110);
 }
+
+* {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 div{
-    border-bottom: 2px solid orange;
-    margin: 10px;
+	margin-left: auto;
+    margin-right: auto;
     padding: 10px;
+    margin-bottom: 20px;
+	width: 1045px;
+	height: fit-content;
+	background-color: rgb(144, 154, 192);
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
 h1{
     margin-bottom: 5px;
+	font-family: Georgia;
+	color: rgb(29, 50, 51);
 }
 p{
     margin-top: 5px;
@@ -23,16 +39,19 @@ table {
 table th {
 	font-weight: bold;
 	padding: 5px;
-	background-color: #ffeac4;
-	border: 1px solid #dda630;
+	background-color: rgb(29, 50, 51);
+	border: 1px solid rgb(29, 29, 51);
 }
 table td {
-	border: 1px solid #dda630;
+	border: 1px solid rgb(29, 50, 51);
 	padding: 5px;
 }
 
 input{
 	margin-right: 10px;
+	border: 2px solid rgb(29, 50, 51);
+    border-radius: 5px;
+    outline-color: rgb(136, 166, 184);
 }
 
 input[type="number"]{
@@ -44,4 +63,13 @@ input[type="text"]{
 button{
 	height: 21px;
 	vertical-align: bottom;
+	background-color: rgb(200, 212, 219);
+    border: 2px solid rgb(29, 50, 51);
+	border-radius: 5px;
+    touch-action: manipulation;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(131, 202, 167);
+  }
