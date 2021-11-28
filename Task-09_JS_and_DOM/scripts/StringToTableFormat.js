@@ -1,6 +1,7 @@
 let rowsInput = document.getElementById("rows_input");
 let columnsInput = document.getElementById("columns_input");
 let textInput = document.getElementById("table_text_input");
+let errorOutput = document.getElementById("table_error_output");
 let tableOutput = document.getElementById("string-table_output");
 
 document.getElementById("generate_table").addEventListener("click", generateTable);
@@ -10,6 +11,15 @@ function generateTable(){
     let rows = rowsInput.value;
     let columns = columnsInput.value;
     let text = textInput.value;
+
+    if(rows == ''){
+        errorOutput.value = 'Error! Enter rows count';
+        return;
+    }
+    else if(columns == ''){
+        errorOutput.value = 'Error! Enter columns count';
+        return;
+    }
 
     let array = getTableArray(rows, columns, text);
     tableOutput.innerHTML = getHTMLTable(array);

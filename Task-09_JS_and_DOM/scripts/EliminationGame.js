@@ -10,6 +10,15 @@ function pageStartGame(){
     let playersCount = playersInput.value;
     let step = stepInput.value;
 
+    if(playersCount == ''){
+        gameWinner.value = 'Error! Enter number of players';
+        return;
+    }
+    else if(step == ''){
+        gameWinner.value = 'Error! Enter step size';
+        return;
+    }
+
     let gameResult = startGame(parseInt(playersCount), parseInt(step));
 
     gameWinner.value = `Winner: ${gameResult.win}`;
