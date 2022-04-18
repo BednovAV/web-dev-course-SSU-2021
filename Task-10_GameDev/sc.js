@@ -1,5 +1,4 @@
-// -----------------------------Constants------------------------------------
-
+//#region Constants
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
 const pointsOutput = document.getElementById('pointsOutput');
@@ -54,10 +53,9 @@ const figureColors = {
 
 const grid = 32;
 
-// -----------------------------End Constants------------------------------------
+//#endregion Constants
 
-// -----------------------------Helpers------------------------------------------
-
+//#region Helpers
 function GetEmptyPlayField() {
   var playfield = [];
 
@@ -113,7 +111,7 @@ function generateSequence(tetrominoSequence) {
   }
 }
 
-// ----------------------------- End Helpers------------------------------------------
+//#endregion Helpers
 
 function keydownListener(e) {
   if (gameOver) return;
